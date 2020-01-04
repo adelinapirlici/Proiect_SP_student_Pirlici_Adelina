@@ -1,10 +1,10 @@
 %Determinarea coeficientilor SFC, reprezentarea semnalului si al spectrului
-% semnal triunghiular de perioadã T=40s, durata %D=16s(conform tabelului), numãr de coeficien?i N=50
+% semnal triunghiular de perioadÄƒ T=40s, durata %D=16s(conform tabelului), numÄƒr de coeficien?i N=50
 P=40; %perioada semnalului
 f=1/P; % frecventa = inversul perioadei
 t=-2*P:0.002:2*P; % esantionarea semnalului original
-D=0.4;  % am ales un D conform cerintei, numarul meu din tabel fiind 16 =>
-% 16/40=0.4 ; 
+D=0.45;  % am ales un D conform cerintei, numarul meu din tabel fiind 16 =>
+% 18/40=0.45 ; 
 N=50;
 xi=(1+sawtooth(2*pi*f*t,D))/2; % semnal triunghiular deoarece am numar par
 % componenta initiala
